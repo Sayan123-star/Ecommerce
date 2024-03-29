@@ -1,0 +1,14 @@
+.MuiStepConnector-root{
+    background-color: black;
+    
+}
+.MuiStepConnector-active,
+.MuiStepConnector-completed {
+    background-color: blue;
+}
+/* @media screen and (max-width:400px) {
+    .step{
+        width: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+} */

@@ -1,0 +1,148 @@
+.confirmOrderPage{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+}
+.confirmShipArea{
+    padding: 5vmax;
+    padding-bottom: 0%;
+}
+.confirmShipArea > p{
+    font: 400 1.8vmax;
+}
+.confirmShipAreaBox,
+.confirmCartContain{
+    margin: 2vmax;
+}
+.confirmShipAreaBox > div{
+    display: flex;
+    margin: 1vmax 0;
+    vertical-align: middle;
+}
+.confirmShipAreaBox > div >p{
+    font: 400 1vmax;
+}
+.confirmShipAreaBox > div > span{
+    font: 100 1vmax;
+    margin: 0 1vmax;
+}
+.confirmCartItems > p{
+    font: 400 1.8vmax;
+}
+.confirmCartItems{
+    padding: 5vmax;
+    padding-top: 1vmax;
+}
+.confirmCartContain{
+    max-height: 15vmax;
+    overflow-y: auto;
+}
+.confirmCartContain > div{
+    display: flex;
+    font: 400 1vmax;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vmax 0;
+}
+.confirmCartContain>div>img{
+    width: 3vmax;
+}
+.confirmCartContain>div>a{
+    text-decoration: none;
+    color: black;
+    width: 60%;
+    margin: 0 2vmax;
+}
+.confirmCartContain>div>span{
+    font: 100 1vmax;
+}
+.orderSummary{
+    padding: 7vmax;
+}
+.orderSummary>p{
+    text-align: center;
+    box-sizing: border-box;
+    font: 400 1.8vmax;
+    padding: 1vmax;
+    width: 100%;
+    margin: auto;
+}
+.orderSummary>div>div{
+    display: flex;
+    font: 300 1vmax;
+    justify-content: space-between;
+    margin: 2vmax 0;
+}
+.orderSummaryTotal{
+    display: flex;
+    font: 300 1vmax;
+    justify-content: space-between;
+    padding: 2vmax 0;
+}
+.orderSummary>button{
+    width: 100%;
+    font: 400 1vmax;
+    transition: 0.5s;
+    padding: 1vmax;
+    margin: auto;
+}
+@media screen and (max-width:600px) {
+    .confirmOrderPage{
+        grid-template-columns: 1fr;
+        height: unset;
+    }
+    .confirmOrderPage>div:last-child{
+        border-left: 0;
+    }
+    .confirmShipArea>p{
+        font: 400 6vw;
+    }
+    .confirmShipAreaBox>div{
+        display: flex;
+        margin: 6vw 0;
+    }
+    .confirmShipAreaBox>div>p{
+        font: 400 4vw;
+    }
+    .confirmShipAreaBox>div>span{
+        font: 100 4vw;
+    }
+    .confirmCartItems>p{
+        font: 400 6vw;
+    }
+    .confirmCartContain{
+        max-height: 50vw;
+    }
+    .confirmCartContain>div{
+        font: 400 4vw;
+    }
+    .confirmCartContain>div>img{
+        width: 10vw;
+    }
+    .confirmCartContain>div>a{
+        margin: 0;
+        width: 30%;
+    }
+    .confirmCartContain>div>span{
+        font: 100 4vw;
+    }
+    .orderSummary{
+        padding: 12vw;
+    }
+    .orderSummary>p{
+        font: 400 6vw;
+    }
+    .orderSummary>div>div{
+        font: 300 4vw;
+    }
+    .orderSummaryTotal{
+        font: 300 4vw;
+        padding: 5vw 0;
+    }
+    .orderSummary>button{
+        padding: 4vw;
+        margin: 4vw auto;
+        font: 400 4vw;
+    }
+
+}

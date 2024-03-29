@@ -1,0 +1,35 @@
+.allProductsPage{
+    width: 84vw;
+    max-width: 100%;
+    padding: 0 7vmax;
+    box-sizing: border-box;
+    place-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  
+    overflow-y: auto;
+}
+#allProductsHeading{
+    text-align: center;
+    font: 400 1.2vmax;
+    padding: 0.5vmax;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    font-weight: bolder;
+}
+#tableHead{
+    font: 300 1.0vmax;
+}
+@media screen and (max-width:600px) {
+    .allProductsPage{
+        width: 100vw;
+        align-items: center;
+        height: 50vh;
+    }
+    th{
+        font-size: 10px;
+    }
+    td{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,71 @@
+.paymentContain{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    height: 65vh;
+    margin: 2vmax;
+}
+.paymentForm{
+    width: 22%;
+    height: 100%;
+}
+.paymentForm>h6{
+    font: 400 2vmax;
+    text-align: center;
+    border-bottom: 1px solid blue;
+    padding: 1vmax 0;
+    font-weight: bolder;
+    width: 50%;
+    margin: auto;
+}
+.paymentForm>div{
+    display: flex;
+    align-items: center;
+    margin: 2vmax 0;
+}
+.cardInput{
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box; 
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+}
+.paymentForm>div>svg{
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+}
+.payFormBtn{
+    font: 300 0.9vmax;
+    width: 100%;
+    padding: 0.8vmax;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width:600px) {
+    .paymentForm{
+        width: 90%;
+    }
+    .paymentForm>h6{
+        font: 400 8vw;
+        padding: 4vw 0;
+        width: 60%;
+    }
+    .paymentForm>div{
+        display: flex;
+        align-items: center;
+        margin: 10vw 0;
+    }
+    .cardInput{
+        padding: 4vw 10vw;
+    }
+    .paymentForm>div>svg{
+        font-size: 6vw;
+    }
+    .payFormBtn{
+        font: 300 4vw;
+        padding: 4vw;
+    }
+}

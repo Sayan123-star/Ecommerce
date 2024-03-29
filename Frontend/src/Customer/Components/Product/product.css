@@ -1,0 +1,165 @@
+.ProductDetails{
+    width: 100vw;
+    max-width: 100%;
+    padding: 6vmax;
+    box-sizing: border-box;
+    display: flex;
+}
+.ProductDetails > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vmax;
+    box-sizing: border-box;
+    
+}
+.ProductDetails > div:last-child{
+    align-items: flex-start;
+}
+.CarouselImg{
+    width: 20vmax;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.db-1 > h2{
+    font-weight: bolder;
+    text-transform: capitalize;
+    font: 600 1.6vmax
+}
+.db-1 > p{
+    font-style: italic;
+    font: 200 0.6vmax;
+}
+.db-2 {
+    width: 70%;
+    border-top: 1px solid rgba(0, 0, 0, 0.205);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.8vmax;
+}
+.db-3{
+    width: 70%;
+}
+.db-3 > h2{
+    font: 400 1.8vmax;
+    margin: 1vmax 0;
+}
+.db-3-1{
+    display: flex;
+    align-items: center;
+}
+.db-3-1-1 > button{
+    padding: 0.5vmax;
+    transition: all 0.5s;
+}
+.db-3-1-1 > input{
+    border:none;
+    border-radius: 5px;
+    padding: 0.5vmax;
+    vertical-align: middle;
+    width: 5vmax;
+    text-align: center;
+    font: 400 0.8vmax;
+    outline: none;
+    color: black;
+}
+.db-3-1 > button:last-child{
+    transition: all 0.5s;
+    font: 500 0.7vmax;
+    padding: 0.5vmax 2vmax;
+    margin: 1vmax;
+}
+
+.db-4{
+    color: rgba(0, 0, 0, 0.897);
+    font: 500 1.2vmax;
+    font-weight: bolder;
+}
+.db-4 > p{
+    color: rgba(0, 0, 0, 0.534);
+    font: 300 0.8vmax;
+}
+
+@media screen and (max-width: 999px){
+    .db-3 > h1{
+        font: 700 3vmax;
+    }
+    .db-3-1{
+        flex-direction: column;
+    }
+    .db-3-1-1{
+        padding: 2vmax 0;
+    }
+    .db-3-1-1 > button{
+        padding: 1.2vmax;
+        width: 4vmax;
+    }
+    .db-3-1-1 > input{
+        padding: 1.5vmax;
+        width: 5vmax;
+        font: 400 1.8vmax;
+    }
+    .db-3-1 > Button{
+        font: 500 1.7vmax;
+        padding: 1.5vmax;
+        width: 20vmax;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .ProductDetails{
+        flex-direction: column;
+        height: unset;
+    }
+    .CarouselImg{
+        width: 30vmax;
+    }
+    .ProductDetails > div:last-child{
+        align-items: center;
+    }
+    .db-1 > h2{
+        font-size: 2.8vmax;
+        text-align: end;
+    }
+    .db-1 > p{
+        text-align: center;
+        font-size: 1vmax;
+    }
+    .db-2 {
+        justify-content: center;
+    }
+    .db-3 > h1{
+        font: 700 3vmax;
+        text-align: center;
+    }
+    .db-3-1{
+        flex-direction: column;
+    }
+    .db-3-1-1{
+        padding: 2vmax 0;
+    }
+    .db-3-1-1 > button{
+        padding: 1.2vmax;
+        width: 4vmax;
+    }
+    .db-3-1-1 > input{
+        padding: 1.5vmax;
+        width: 5vmax;
+        font: 400 1.8vmax;
+    }
+    .db-3-1 > Button{
+        font: 500 1.7vmax;
+        padding: 1.5vmax;
+        width: 20vmax;
+        margin: 3vmax 0;
+    }
+    .db-4{
+        font: 500 2.5vmax;
+    }
+    .db-4 > p{
+        font: 300 1.8vmax;
+    }
+}

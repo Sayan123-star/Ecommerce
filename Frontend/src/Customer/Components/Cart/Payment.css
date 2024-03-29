@@ -1,0 +1,80 @@
+.payContain{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.payBox{
+    width: 25vw;
+    height: 90vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.payHead{
+    text-align: center;
+    font: 400 1.3vmax;
+    border-bottom: 4px solid  #2776e5;
+    width: 80%;
+    margin: auto;
+}
+.payForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2vmax;
+    justify-content: space-evenly;
+    height: 80%;
+    transition: all 0.5s;
+}
+.payForm > div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.payForm > div > input,
+.payForm > div > select{
+    padding: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    font: 300 0.9vmax;
+}
+@media screen and (max-width:850px) {
+    .payBox{
+        width: 50vw;
+        height: 65vh;
+    }
+    .payHead{
+        font: 300 4vw;
+        padding: 4vw;
+    }
+    .payForm{
+        padding: 9vw;
+    }
+    .payForm > div > input,
+    .payForm > div > select{
+        padding: 3vw;
+        font: 200 3vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .payBox{
+        width: 100vw;
+        height: 95vh;
+    }
+    .payHead{
+        font: 400 6vw;
+        padding: 5vw;
+    }
+    .payForm{
+        padding: 11vw;
+    }
+    .payForm > div > input,
+    .payForm > div > select{
+        padding: 5vw;
+        font: 300 4vw;
+    }
+}

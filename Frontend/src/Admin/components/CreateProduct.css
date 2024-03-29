@@ -1,0 +1,53 @@
+
+.createProductForm{
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2vmax;
+    justify-content: space-evenly;
+    height: 70%;
+    transition: all 0.5s;
+}
+#createProductFileImg > img{
+    width: 3vmax;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+/* // e.preventDefault();
+        // const productForm = new FormData();
+        // productForm.set("name",name)
+        // productForm.set("price",price)
+        // productForm.set("description",description)
+        // productForm.set("category",category)
+        // //productForm.append("images",images)
+        // for (let i=0;i<images.length;i++){
+        //   productForm.append(`images[${i}]`,images[i])
+        // }
+        // fetch(`${API_BASE_URL}/api/createproduct`,{
+        //   method:"POST",
+        //   body: productForm
+        // }).then(ren=>)
+        // images.forEach((image)=>{
+        //     productForm.append("images",image)
+        // })
+       // dispatch(createProduct(productForm)) */
+
+/* //       setImages(e.target.files) */
+
+#createProductFile > .input::file-selector-button{
+   
+    z-index: 2;
+    height: 3vh;
+}
+
+.createProductForm > p:first-child{
+    font-weight: bold;
+    color: blue;
+}
+
+@media screen and (max-width: 600px) {
+    .logSignbox{
+        width: 100vw;
+        height: 60vh;
+    }
+}

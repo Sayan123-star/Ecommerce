@@ -1,0 +1,76 @@
+.emptyCart{
+    margin: auto;
+    text-align: center;
+    padding: 10vmax;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.emptyCart > svg{
+    font-size: 5vmax;
+    color: rgb(56, 56, 253);
+}
+.emptyCart > p{
+    font-size: 2vmax;
+}
+.emptyCart > a{
+    padding: 1vmax 3vmax;
+    font: 400 1vmax;
+}
+.cartPage{
+    padding: 3vmax;
+}
+.cartHead{
+    width: 90%;
+    background-color: rgb(59, 59, 243);
+    box-sizing: border-box;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    color: white;
+    font: 300 0.7vmax;
+}
+.cartHead >p{
+    margin: 10px;
+}
+.cartHead > p:last-child{
+    text-align: end;
+}
+.cartContainer{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+}
+.cartInput{
+    display: flex;
+    align-items: center;
+    height: 8vmax;
+}
+.cartInput > button{
+    padding: 0.5vmax;
+    color: white;
+    transition: all 0.5s;
+}
+.cartInput > input{
+    border: none;
+    padding: 0.5vmax;
+    width: 3vmax;
+    text-align: center;
+    outline: none;
+    font: 400 0.8vmax;
+}
+.cartSubtotal{
+    display: flex;
+    padding: 0.5vmax;
+    height: 8vmax;
+    align-items: center;
+    box-sizing: border-box;
+    font: 300 1vmax;
+    justify-content: flex-end;
+}
+ .check{
+    display: grid;
+    grid-template-columns: 3fr 3.5fr;
+}

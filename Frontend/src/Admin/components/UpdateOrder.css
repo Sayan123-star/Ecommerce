@@ -1,0 +1,17 @@
+
+.upOrderContain{
+    background:none
+}
+.confirmCartItem{
+    overflow-y: auto;
+}
+@media screen and (max-width:600px) {
+    .orderGrid{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:810px) {
+    .orderGrid{
+        flex-direction: column;
+    }
+}

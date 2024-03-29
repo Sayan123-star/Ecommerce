@@ -1,0 +1,86 @@
+.dashboard{
+    width: 100vw;
+    max-width: 100%;
+    max-height: 200%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    position: absolute;
+    background-color: lightgray;
+}
+.dasboardContainer{
+    border-left: 1px solid black;
+    background-color: lightgray;
+    padding: 3rem 0;
+}
+.dasboardContainer>h2{
+    font:300 2rem;
+    text-align: center;
+    width: 50%;
+    padding: 1.5rem;
+    margin: auto;
+}
+.dashSumm{
+    margin: 2rem 0;
+}
+.dashSumm>div{
+    display: flex;
+    justify-content: center;
+}
+.dashSumm>div>p{
+    background-color: rgb(57, 57, 218);
+    color: white;
+    font: 300 1.3rem;
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    margin: 0 2rem;
+}
+.dashSummBox>a{
+    color: white;
+    font: 300 2rem;
+    text-align: center;
+    background-color: rgb(57, 57, 218);
+    text-decoration: none;
+    padding: 1.5rem;
+    width: 10vmax;
+    height: 10vmax;
+    margin: 2rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+.dashSummBox>a:first-child{
+    background-color: rgb(19, 180, 145);
+    color: white;
+}
+
+.dashSummBox>a:last-child{
+    background-color: rgb(10, 201, 26);
+    color: white;
+}
+.dashSummBox>a:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.linechart{
+    width:80%;
+    margin:auto;
+}
+@media screen and (max-width:600px) {
+    .dashboard{
+        grid-template-columns: 1fr;
+    }
+    .dasboardContainer{
+        border-left: none;
+    }
+    .dashSumm>div>p{
+        margin: 0;
+    }
+    .dashSummBox>a{
+        padding: 0.5rem;
+        margin: 1rem;
+        font: 300 0.9rem;
+    }
+}

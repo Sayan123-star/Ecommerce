@@ -1,0 +1,55 @@
+.updateProfileContain{
+    width: 95vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0;
+}
+.updateProfilebox{
+    width: 25vw;
+    height: 60vh;
+    box-sizing: border-box;
+}
+.updateHeading{
+    font-weight: bold;
+    color: blue;
+}
+.updateProfileForm{
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2vmax;
+    justify-content: space-evenly;
+    height: 70%;
+    transition: all 0.5s;
+}
+#updateProfileImg > img{
+    width: 3vmax;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+Form > #updateProfileImg > .input{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    padding: 3%;
+}
+#updateProfileImg > .input::file-selector-button{
+    width: 100%;
+    z-index: 2;
+    height: 3vh;
+    margin: 0;
+}
+
+.updateProfileForm > p:first-child{
+    font-weight: bold;
+    color: blue;
+}
+
+@media screen and (max-width: 600px) {
+    .updateProfilebox{
+        width: 100vw;
+        height: 60vh;
+    }
+}

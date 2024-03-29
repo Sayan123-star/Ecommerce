@@ -1,0 +1,149 @@
+.orderDetailPage{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+}
+.orderDetailContain{
+    padding: 5vmax;
+    padding-bottom: 0%;
+}
+.orderDetailContain > p{
+    font: 400 1.8vmax;
+}
+.orderDetailContainBox,
+.orderDetailCartContain{
+    margin: 2vmax;
+}
+.orderDetailContainBox > div{
+    display: flex;
+    margin: 1vmax 0;
+    vertical-align: middle;
+}
+.orderDetailContainBox > div >p{
+    font: 400 1vmax;
+}
+.orderDetailContainBox > div > span{
+    font: 100 1vmax;
+    margin: 0 1vmax;
+}
+.orderCartItems > p{
+    font: 400 1.8vmax;
+}
+.orderCartItems{
+    padding: 5vmax;
+    padding-top: 1vmax;
+}
+.orderDetailCartContain{
+    margin-top: -7px;
+    max-height: 15vmax;
+    overflow-y: auto;
+}
+.orderDetailCartContain > div{
+    display: flex;
+    font: 400 1vmax;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vmax 0;
+}
+.orderDetailCartContain>div>img{
+    width: 3vmax;
+}
+.orderDetailCartContain>div>a{
+    text-decoration: none;
+    color: black;
+    width: 60%;
+    margin: 0 2vmax;
+}
+.orderDetailCartContain>div>span{
+    font: 100 1vmax;
+}
+.orderSummary{
+    padding: 7vmax;
+}
+.orderSummary>p{
+    text-align: center;
+    box-sizing: border-box;
+    font: 400 1.8vmax;
+    padding: 1vmax;
+    width: 100%;
+    margin: auto;
+}
+.orderSummary>div>div{
+    display: flex;
+    font: 300 1vmax;
+    justify-content: space-between;
+    margin: 2vmax 0;
+}
+.orderSummaryTotal{
+    display: flex;
+    font: 300 1vmax;
+    justify-content: space-between;
+    padding: 2vmax 0;
+}
+.orderSummary>button{
+    width: 100%;
+    font: 400 1vmax;
+    transition: 0.5s;
+    padding: 1vmax;
+    margin: auto;
+}
+@media screen and (max-width:600px) {
+    .orderDetailsPage{
+        grid-template-columns: 1fr;
+        height: unset;
+    }
+    .orderDetailsPage>div:last-child{
+        border-left: 0;
+    }
+    .orderDetailContain>p{
+        font: 400 6vw;
+    }
+    .orderDetailContainBox>div{
+        display: flex;
+        margin: 6vw 0;
+    }
+    .orderDetailContainBox>div>p{
+        font: 400 4vw;
+    }
+    .orderDetailContainBox>div>span{
+        font: 100 4vw;
+    }
+    .orderCartItems>p{
+        font: 400 6vw;
+    }
+    .orderDetailCartContain{
+        max-height: 50vw;
+    }
+    .orderDetailCartContain>div{
+        font: 400 4vw;
+    }
+    .orderDetailCartContain>div>img{
+        width: 10vw;
+    }
+    .orderDetailCartContain>div>a{
+        margin: 0;
+        width: 30%;
+    }
+    .orderDetailCartContain>div>span{
+        font: 100 4vw;
+    }
+    .orderSummary{
+        padding: 12vw;
+    }
+    .orderSummary>p{
+        font: 400 6vw;
+    }
+    .orderSummary>div>div{
+        font: 300 4vw;
+    }
+    .orderSummaryTotal{
+        font: 300 4vw;
+        padding: 5vw 0;
+    }
+    .orderSummary>button{
+        padding: 4vw;
+        margin: 4vw auto;
+        font: 400 4vw;
+    }
+
+}
